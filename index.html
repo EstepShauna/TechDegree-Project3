@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Newsletter Sign Up Form</title>
+  </head>
+
+  <body>
+    <h1>THE CODE REVIEW</h1>
+    <h2>Signup for the Newsletter</h2>
+    <p>Get the latest news on how your code is doing right in your indox.</p>
+
+
+    <hr class="style1">
+    <hr class="style3">
+    <form action="index.html" method="post">
+
+    <fieldset>
+      <legend><span class="number">1</span>Contact Information</legend>
+
+      <div class="container">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="user_name" placeholder="Required" class="textfield">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="user_email" placeholder="Required" class="textfield">
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="user_phone" class="textfield">
+        </div>
+        <div>
+          <label for="street-address">Street Address</label>
+          <input type="text" id="street-address" name="user_street_address" class="textfield">
+        </div>
+        <div>
+          <label for="city">City</label>
+          <input type="text" id="city" name="user_city" class="textfield">
+        </div>
+
+        <div>
+         <label class="labels" for="state">State</label>
+         <select id="state" name="user_state" class="textfield">
+             <option value="select">Choose State</option>
+             <option value="new_york">New York</option>
+             <option value="new_jersey">New Jersey</option>
+             <option value="north_carolina">North Carolina</option>
+             <option value="californa">California</option>
+             <option value="colorado">Colorado</option>
+             <option value="massachusetts">Massachusetts</option>
+             <option value="hawaii">Hawaii</option>
+         </select>
+        </div>
+
+        <div>
+          <label class="labels" for="code">Zipcode</label>
+          <input type="text" id="code" name="user_zipcode" class="zipcode">
+        </div>
+      </div>
+        <hr class="style2">
+      </fieldset>
+
+      <fieldset>
+        <legend><span class="number">2</span>Newsletter</legend>
+        <label>Select the newsletters you would like to receive</label>
+
+
+        <input type="checkbox" id="news" name="user_interest" value="hmtlnews">
+        <label class="light" for="news">HTML News</label>
+        <br>
+
+        <input type="checkbox" id="css" name="user_interest" value="cssnews">
+        <label class="light" for="css">CSS News</label>
+        <br>
+
+        <input type="checkbox" id="javascript" name="user_interest" value="javascriptnews">
+        <label class="light" for="javascript">Javascript News</label>
+        <br><br>
+
+        <label>Newsletter Format:</label>
+
+        <input type="radio" id="format" name="user_format" value="hmtl">
+        <label for="format" class="light">HTML</label>
+        <br>
+
+        <input type="radio" id="plain" name="user_format" value="plaintext">
+        <label for="plain" class="light">Plain Text</label>
+
+
+        <label for="request" class="textarea-label">Other topics you'd like to hear about</label>
+        <textarea id="request" name="user_request"></textarea>
+
+        <button type="submit">Sign Up</button>
+    </fieldset>
+  </form>
+
+  <footer>
+      <p>&copy;2017, Shauna Estep</p>
+      <a href="#">Back To Top</a>
+  </footer>
+  </body>
+</html>
